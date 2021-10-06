@@ -49,24 +49,24 @@ wget -O xp-wg "https://raw.githubusercontent.com/rockneters/aioaio/main/menu/xp-
 wget -O renew-wg "https://raw.githubusercontent.com/rockneters/aioaio/main/menu/renew-wg.sh" && chmod +x renew-wg
 
 cd
-wget -O /usr/bin/addv2ray "https://raw.githubusercontent.com/rockneters/aioaio/main/menu/addv2ray.sh" &&  && chmod +x /usr/bin/addv2ray
-wget -O /usr/bin/listv2ray "https://raw.githubusercontent.com/rockneters/aioaio/main/menu/listv2ray.sh" &&  && chmod +x /usr/bin/listv2ray
-wget -O /usr/bin/exp "https://raw.githubusercontent.com/rockneters/aioaio/main/menu/exp.sh" &&  && chmod +x /usr/bin/exp
-wget -O /usr/bin/menu2 "https://raw.githubusercontent.com/rockneters/aioaio/main/menu/menu2.sh" &&  && chmod +x /usr/bin/menu2
-wget -O /usr/bin/delv2ray "https://raw.githubusercontent.com/rockneters/aioaio/main/menu/delv2ray.sh" &&  && chmod +x /usr/bin/delv2ray
-wget -O /usr/bin/addtrojan "https://raw.githubusercontent.com/rockneters/aioaio/main/menu/addtrojan.sh" &&  && chmod +x /usr/bin/addtrojan
-wget -O /usr/bin/deltrojan "https://raw.githubusercontent.com/rockneters/aioaio/main/menu/deltrojan.sh" &&  && chmod +x /usr/bin/deltrojan
-wget -O /usr/bin/exptrojan "https://raw.githubusercontent.com/rockneters/aioaio/main/menu/exptrojan.sh" &&  && chmod +x /usr/bin/exptrojan
-wget -O /usr/bin/listtrojan "https://raw.githubusercontent.com/rockneters/aioaio/main/menu/listtrojan.sh" &&  && chmod +x /usr/bin/listtrojan
-wget -O /usr/bin/listssr "https://raw.githubusercontent.com/rockneters/aioaio/main/menu/listssr.sh" &&  && chmod +x /usr/bin/listssr
-wget -O /usr/bin/cert "https://raw.githubusercontent.com/rockneters/aioaio/main/menu/cert.sh" &&  && chmod +x /usr/bin/cert
-wget -O /usr/bin/cert2vray "https://raw.githubusercontent.com/rockneters/aioaio/main/menu/cert.sh" &&  && chmod +x /usr/bin/cert2vray
-wget -O /usr/bin/cek-ws "https://raw.githubusercontent.com/rockneters/aioaio/main/menu/cek-ws.sh" &&  && chmod +x /usr/bin/cek-ws
+wget -O /usr/bin/addv2ray "https://raw.githubusercontent.com/rockneters/aioaio/main/menu/addv2ray.sh" && chmod +x /usr/bin/addv2ray
+wget -O /usr/bin/listv2ray "https://raw.githubusercontent.com/rockneters/aioaio/main/menu/listv2ray.sh" && chmod +x /usr/bin/listv2ray
+wget -O /usr/bin/exp "https://raw.githubusercontent.com/rockneters/aioaio/main/menu/exp.sh" && chmod +x /usr/bin/exp
+wget -O /usr/bin/menu2 "https://raw.githubusercontent.com/rockneters/aioaio/main/menu/menu2.sh" && chmod +x /usr/bin/menu2
+wget -O /usr/bin/delv2ray "https://raw.githubusercontent.com/rockneters/aioaio/main/menu/delv2ray.sh" && chmod +x /usr/bin/delv2ray
+wget -O /usr/bin/addtrojan "https://raw.githubusercontent.com/rockneters/aioaio/main/menu/addtrojan.sh" && chmod +x /usr/bin/addtrojan
+wget -O /usr/bin/deltrojan "https://raw.githubusercontent.com/rockneters/aioaio/main/menu/deltrojan.sh" && chmod +x /usr/bin/deltrojan
+wget -O /usr/bin/exptrojan "https://raw.githubusercontent.com/rockneters/aioaio/main/menu/exptrojan.sh" && chmod +x /usr/bin/exptrojan
+wget -O /usr/bin/listtrojan "https://raw.githubusercontent.com/rockneters/aioaio/main/menu/listtrojan.sh" && chmod +x /usr/bin/listtrojan
+wget -O /usr/bin/listssr "https://raw.githubusercontent.com/rockneters/aioaio/main/menu/listssr.sh" && chmod +x /usr/bin/listssr
+wget -O /usr/bin/cert "https://raw.githubusercontent.com/rockneters/aioaio/main/menu/cert.sh" && chmod +x /usr/bin/cert
+wget -O /usr/bin/cert2vray "https://raw.githubusercontent.com/rockneters/aioaio/main/menu/cert.sh" && chmod +x /usr/bin/cert2vray
+wget -O /usr/bin/cek-ws "https://raw.githubusercontent.com/rockneters/aioaio/main/menu/cek-ws.sh" && chmod +x /usr/bin/cek-ws
 
-wget -O /usr/bin/ssr https://raw.githubusercontent.com/rockneters/aioaio/main/menu/ssrmu.sh &&  && chmod +x /usr/bin/ssr
-wget -O /usr/bin/addssr https://raw.githubusercontent.com/rockneters/aioaio/main/menu/addssr.sh &&  && chmod +x /usr/bin/addssr
-wget -O /usr/bin/delssr https://raw.githubusercontent.com/rockneters/aioaio/main/menu/delssr.sh &&  && chmod +x /usr/bin/delssr
-wget -O /usr/bin/expssr https://raw.githubusercontent.com/rockneters/aioaio/main/menu/expssr.sh &&  && chmod +x /usr/bin/expssr
+wget -O /usr/bin/ssr https://raw.githubusercontent.com/rockneters/aioaio/main/menu/ssrmu.sh && chmod +x /usr/bin/ssr
+wget -O /usr/bin/addssr https://raw.githubusercontent.com/rockneters/aioaio/main/menu/addssr.sh && chmod +x /usr/bin/addssr
+wget -O /usr/bin/delssr https://raw.githubusercontent.com/rockneters/aioaio/main/menu/delssr.sh && chmod +x /usr/bin/delssr
+wget -O /usr/bin/expssr https://raw.githubusercontent.com/rockneters/aioaio/main/menu/expssr.sh && chmod +x /usr/bin/expssr
 
 cd
 echo "0 0 * * * root xp-ss" >> /etc/crontab
