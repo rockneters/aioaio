@@ -8,6 +8,7 @@ CLIENT_EXISTS=$(grep -w $ssr_user /usr/local/shadowsocksr/akun.conf | wc -l)
 if [[ ${CLIENT_EXISTS} == '1' ]]; then
 echo ""
 echo "Username sudah ada"
+echo ""
 exit 1
 fi
 read -p "Expired (days) : " masaaktif
