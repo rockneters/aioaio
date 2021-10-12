@@ -53,6 +53,3 @@ echo -e "Expired On     : $exp"
 echo -e "=========================="
 echo -e "Terima Kasih Banyak"
 echo -e "Premium Script Make by Rocknet"
-echo ""
-read -p "Tekan enter untuk kembali ke MENU"
-menu

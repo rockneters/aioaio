@@ -90,7 +90,3 @@ sed -i "s/#Username/#${user}-RN $expp\n#Username/" /etc/v2ray/user.txt
 
 systemctl restart v2ray
 systemctl restart v2tls
-
-echo ""
-read -p "Tekan enter untuk kembali ke MENU"
-menu

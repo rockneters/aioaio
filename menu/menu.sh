@@ -117,142 +117,346 @@ echo "----------------Script Mod By Rocknet-----------------"
 read -p "Choose an option from (1-61): " x
 if test $x -eq 1; then
 usernew
+echo ""
+read -p "Tekan enter untuk kembali ke MENU"
+menu
 elif test $x -eq 01; then
 usernew
+echo ""
+read -p "Tekan enter untuk kembali ke MENU"
+menu
 elif test $x -eq 2; then
 trial
+echo ""
+read -p "Tekan enter untuk kembali ke MENU"
+menu
 elif test $x -eq 02; then
 trial
+echo ""
+read -p "Tekan enter untuk kembali ke MENU"
+menu
 elif test $x -eq 3; then
 renew
+echo ""
+read -p "Tekan enter untuk kembali ke MENU"
+menu
 elif test $x -eq 03; then
 renew
+echo ""
+read -p "Tekan enter untuk kembali ke MENU"
+menu
 elif test $x -eq 4; then
 deluser
+echo ""
+read -p "Tekan enter untuk kembali ke MENU"
+menu
 elif test $x -eq 04; then
 deluser
+echo ""
+read -p "Tekan enter untuk kembali ke MENU"
+menu
 elif test $x -eq 5; then
 cek
+echo ""
+read -p "Tekan enter untuk kembali ke MENU"
+menu
 elif test $x -eq 05; then
 cek
+echo ""
+read -p "Tekan enter untuk kembali ke MENU"
+menu
 elif test $x -eq 6; then
 member
+echo ""
+read -p "Tekan enter untuk kembali ke MENU"
+menu
 elif test $x -eq 06; then
 member
+echo ""
+read -p "Tekan enter untuk kembali ke MENU"
+menu
 elif test $x -eq 7; then
 delete
+echo ""
+read -p "Tekan enter untuk kembali ke MENU"
+menu
 elif test $x -eq 07; then
 delete
+echo ""
+read -p "Tekan enter untuk kembali ke MENU"
+menu
 elif test $x -eq 8; then
 autokill
+echo ""
+read -p "Tekan enter untuk kembali ke MENU"
+menu
 elif test $x -eq 08; then
 autokill
+echo ""
+read -p "Tekan enter untuk kembali ke MENU"
+menu
 elif test $x -eq 9; then
 ceklim
+echo ""
+read -p "Tekan enter untuk kembali ke MENU"
+menu
 elif test $x -eq 09; then
 ceklim
+echo ""
+read -p "Tekan enter untuk kembali ke MENU"
+menu
 elif test $x -eq 10; then
 restart
+echo ""
+read -p "Tekan enter untuk kembali ke MENU"
+menu
 elif test $x -eq 11; then
 add-v2ray
+echo ""
+read -p "Tekan enter untuk kembali ke MENU"
+menu
 elif test $x -eq 12; then
 del-ws
+echo ""
+read -p "Tekan enter untuk kembali ke MENU"
+menu
 elif test $x -eq 13; then
 renew-ws
+echo ""
+read -p "Tekan enter untuk kembali ke MENU"
+menu
 elif test $x -eq 14; then
 cek-ws
+echo ""
+read -p "Tekan enter untuk kembali ke MENU"
+menu
 elif test $x -eq 15; then
 add-vless
+echo ""
+read -p "Tekan enter untuk kembali ke MENU"
+menu
 elif test $x -eq 16; then
 del-vless
+echo ""
+read -p "Tekan enter untuk kembali ke MENU"
+menu
 elif test $x -eq 17; then
 renew-vless
+echo ""
+read -p "Tekan enter untuk kembali ke MENU"
+menu
 elif test $x -eq 18; then
 cek-ws
+echo ""
+read -p "Tekan enter untuk kembali ke MENU"
+menu
 elif test $x -eq 19; then
 add-tr
+echo ""
+read -p "Tekan enter untuk kembali ke MENU"
+menu
 elif test $x -eq 20; then
 del-tr
+echo ""
+read -p "Tekan enter untuk kembali ke MENU"
+menu
 elif test $x -eq 21; then
 renew-tr
+echo ""
+read -p "Tekan enter untuk kembali ke MENU"
+menu
 elif test $x -eq 22; then
 cek-tr
+echo ""
+read -p "Tekan enter untuk kembali ke MENU"
+menu
 elif test $x -eq 23; then
 add-ss
+echo ""
+read -p "Tekan enter untuk kembali ke MENU"
+menu
 elif test $x -eq 24; then
 del-ss
+echo ""
+read -p "Tekan enter untuk kembali ke MENU"
+menu
 elif test $x -eq 25; then
 renew-ss
+echo ""
+read -p "Tekan enter untuk kembali ke MENU"
+menu
 elif test $x -eq 26; then
 cek-ss
+echo ""
+read -p "Tekan enter untuk kembali ke MENU"
+menu
 elif test $x -eq 27; then
 add-ssr
+echo ""
+read -p "Tekan enter untuk kembali ke MENU"
+menu
 elif test $x -eq 28; then
 del-ssr
+echo ""
+read -p "Tekan enter untuk kembali ke MENU"
+menu
 elif test $x -eq 29; then
 renew-ssr
+echo ""
+read -p "Tekan enter untuk kembali ke MENU"
+menu
 elif test $x -eq 30; then
 ssr
+echo ""
+read -p "Tekan enter untuk kembali ke MENU"
+menu
 elif test $x -eq 31; then
 add-wg
+echo ""
+read -p "Tekan enter untuk kembali ke MENU"
+menu
 elif test $x -eq 32; then
 del-wg
+echo ""
+read -p "Tekan enter untuk kembali ke MENU"
+menu
 elif test $x -eq 33; then
 cek-wg
+echo ""
+read -p "Tekan enter untuk kembali ke MENU"
+menu
 elif test $x -eq 34; then
 renew-wg
+echo ""
+read -p "Tekan enter untuk kembali ke MENU"
+menu
 elif test $x -eq 35; then
 wg show
+echo ""
+read -p "Tekan enter untuk kembali ke MENU"
+menu
 elif test $x -eq 36; then
 add-l2tp
+echo ""
+read -p "Tekan enter untuk kembali ke MENU"
+menu
 elif test $x -eq 37; then
 del-l2tp
+echo ""
+read -p "Tekan enter untuk kembali ke MENU"
+menu
 elif test $x -eq 38; then
 renew-l2tp
+echo ""
+read -p "Tekan enter untuk kembali ke MENU"
+menu
 elif test $x -eq 39; then
 add-pptp
+echo ""
+read -p "Tekan enter untuk kembali ke MENU"
+menu
 elif test $x -eq 40; then
 del-pptp
+echo ""
+read -p "Tekan enter untuk kembali ke MENU"
+menu
 elif test $x -eq 41; then
 renew-pptp
+echo ""
+read -p "Tekan enter untuk kembali ke MENU"
+menu
 elif test $x -eq 42; then
 cek-pptp
+echo ""
+read -p "Tekan enter untuk kembali ke MENU"
+menu
 elif test $x -eq 43; then
 add-sstp
+echo ""
+read -p "Tekan enter untuk kembali ke MENU"
+menu
 elif test $x -eq 44; then
 del-sstp
+echo ""
+read -p "Tekan enter untuk kembali ke MENU"
+menu
 elif test $x -eq 45; then
 renew-sstp
+echo ""
+read -p "Tekan enter untuk kembali ke MENU"
+menu
 elif test $x -eq 46; then
 cek-sstp
+echo ""
+read -p "Tekan enter untuk kembali ke MENU"
+menu
 elif test $x -eq 47; then
 speedtest
+echo ""
+read -p "Tekan enter untuk kembali ke MENU"
+menu
 elif test $x -eq 48; then
 add-host
+echo ""
+read -p "Tekan enter untuk kembali ke MENU"
+menu
 elif test $x -eq 49; then
 change-port
+echo ""
+read -p "Tekan enter untuk kembali ke MENU"
+menu
 elif test $x -eq 50; then
 autobackup
+echo ""
+read -p "Tekan enter untuk kembali ke MENU"
+menu
 elif test $x -eq 51; then
 backup
+echo ""
+read -p "Tekan enter untuk kembali ke MENU"
+menu
 elif test $x -eq 52; then
 restore
+echo ""
+read -p "Tekan enter untuk kembali ke MENU"
+menu
 elif test $x -eq 53; then
 wbmn
+echo ""
+read -p "Tekan enter untuk kembali ke MENU"
+menu
 elif test $x -eq 54; then
 kernel-updt
+echo ""
+read -p "Tekan enter untuk kembali ke MENU"
+menu
 elif test $x -eq 55; then
 limit-speed
+echo ""
+read -p "Tekan enter untuk kembali ke MENU"
+menu
 elif test $x -eq 56; then
 ram
+echo ""
+read -p "Tekan enter untuk kembali ke MENU"
+menu
 elif test $x -eq 57; then
 update
+echo ""
+read -p "Tekan enter untuk kembali ke MENU"
+menu
 elif test $x -eq 58; then
 reboot
 elif test $x -eq 59; then
 passwd
+echo ""
+read -p "Tekan enter untuk kembali ke MENU"
+menu
 elif test $x -eq 60; then
 cert2vray
+echo ""
+read -p "Tekan enter untuk kembali ke MENU"
+menu
 elif test $x -eq 61; then
 echo " "
 echo "Goodbye Menu!"

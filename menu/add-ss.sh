@@ -96,8 +96,4 @@ echo -e "==========================="
 echo -e "Link OBFS HTTP : $linkss2"
 echo -e "==========================="
 echo -e "Terima Kasih Banyak"
-echo -e "Premium Script Make by Rocknet"
-
-echo ""
-read -p "Tekan enter untuk kembali ke MENU"
-menu
+echo -e "Premium Script Mod by Rocknet"

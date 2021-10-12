@@ -55,7 +55,3 @@ echo -e "Premium Script Make by Rocknet"
 sed -i "s/#Username/#${user}-RN $expp\n#Username/" /etc/v2ray/usertrojan.txt
 
 systemctl restart trojan
-
-echo ""
-read -p "Tekan enter untuk kembali ke MENU"
-menu
