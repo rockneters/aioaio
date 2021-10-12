@@ -114,7 +114,7 @@ echo -e "${color1}[59] • ${color3}Change Server Password"
 echo -e "${color1}[60] • ${color3}Renew Certificate V2ray"
 echo -e "${color1}[61] • ${color3}Exit Menu"
 echo "----------------Script Mod By Rocknet-----------------"
-read -p "Choose an option from (1-62): " x
+read -p "Choose an option from (1-61): " x
 if test $x -eq 1|01; then
 usernew
 elif test $x -eq 2|02; then
