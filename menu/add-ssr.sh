@@ -1,15 +1,16 @@
 #!/bin/bash
 IP=$(wget -qO- icanhazip.com);
 clear
+echo ""
 echo "Masukan Username"
-read -e -p "Username" ssr_user
+read -e -p "Username : " ssr_user
 CLIENT_EXISTS=$(grep -w $ssr_user /usr/local/shadowsocksr/akun.conf | wc -l)
 if [[ ${CLIENT_EXISTS} == '1' ]]; then
 echo ""
 echo "Username sudah ada"
 exit 1
 fi
-read -p "Expired (days): " masaaktif
+read -p "Expired (days) : " masaaktif
 exp=`date -d "$masaaktif days" +"%Y-%m-%d"`
 lastport=$(cat /usr/local/shadowsocksr/mudb.json | grep '"port": ' | tail -n1 | awk '{print $2}' | cut -d "," -f 1 | cut -d ":" -f 1 )
 if [[ $lastport == '' ]]; then
@@ -50,6 +51,6 @@ echo -e "Obfs       : ${Red_font_prefix}${ssr_obfs}"
 echo -e "Limit      : ${ssr_protocol_param}"
 echo -e "Expired On : ${exp} "
 echo -e "================================="
-echo -e " ${ssr_link}"
+echo -e "${ssr_link}"
 echo -e "================================="
-echo -e "Script Make by Rocknet"
+echo -e "Terima kasih ! by @RocknetStore"
