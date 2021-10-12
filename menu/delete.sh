@@ -1,19 +1,13 @@
 #!/bin/bash
-# ===========================================
-# | AUTOSCRIPT FOR INSTALLATION SSH AND VPN |
-# ===========================================
-# | Owner : Administrator JasonTheKiller    |
-# | Date Owned : 12/10/2018                 |
-# | Telegram : t.me/JasonKiller             |
-# ===========================================
-            
-            echo ""
-
-               if [ ! -f /usr/local/bin/deleteduser ]; then
-               echo "echo """ > /usr/local/bin/deleteduser
-               chmod +x /usr/local/bin/deleteduser
-               fi
+red='\e[1;31m'
+green='\e[0;32m'
+NC='\e[0m'
+MYIP=$(wget -qO- icanhazip.com);
+echo "Checking VPS"
+clear
                hariini=`date +%d-%m-%Y`
+               echo "Thank you for removing the EXPIRED USERS"
+               echo "--------------------------------------"
                cat /etc/shadow | cut -d: -f1,8 | sed /:$/d > /tmp/expirelist.txt
                totalaccounts=`cat /tmp/expirelist.txt | wc -l`
                for((i=1; i<=$totalaccounts; i++ ))
@@ -33,16 +27,18 @@
                username=$username" " 
                done
                bulantahun=`echo $tglexp |awk -F" " '{print $2,$6}'`
-               echo "echo "- User : $username Expire at : $tgl $bulantahun"" >> /usr/local/bin/alluser
+               echo "echo "Expired- User : $username Expire at : $tgl $bulantahun"" >> /usr/local/bin/alluser
                todaystime=`date +%s`
                if [ $userexpireinseconds -ge $todaystime ] ;
                then
 		    	:
                else
-               echo "echo "- Username : $username are expired at: $tgl $bulantahun and removed : $hariini "" >> /usr/local/bin/deleteduser
+               echo "echo "Expired- Username : $username are expired at: $tgl $bulantahun and removed : $hariini "" >> /usr/local/bin/deleteduser
 	           echo "Username $username that are expired at $tgl $bulantahun removed from the VPS $hariini"
                userdel $username
                fi
                done
                echo " "
-               echo "Premium Script Make by Rocknet"
+               echo "--------------------------------------"
+               echo "Script are successfully run"
+menu
