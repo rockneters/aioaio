@@ -51,7 +51,7 @@ wget -O renew-wg "https://raw.githubusercontent.com/rockneters/aioaio/main/menu/
 cd
 wget -O /usr/bin/addv2ray "https://raw.githubusercontent.com/rockneters/aioaio/main/menu/addv2ray.sh" && chmod +x /usr/bin/addv2ray
 wget -O /usr/bin/listv2ray "https://raw.githubusercontent.com/rockneters/aioaio/main/menu/listv2ray.sh" && chmod +x /usr/bin/listv2ray
-wget -O /usr/bin/exp "https://raw.githubusercontent.com/rockneters/aioaio/main/menu/exp.sh" && chmod +x /usr/bin/exp
+wget -O /usr/bin/exp "https://raw.githubusercontent.com/rockneters/aioaio/main/menu/exp.sh" &&  chmod +x /usr/bin/exp
 wget -O /usr/bin/menu2 "https://raw.githubusercontent.com/rockneters/aioaio/main/menu/menu2.sh" && chmod +x /usr/bin/menu2
 wget -O /usr/bin/delv2ray "https://raw.githubusercontent.com/rockneters/aioaio/main/menu/delv2ray.sh" && chmod +x /usr/bin/delv2ray
 wget -O /usr/bin/addtrojan "https://raw.githubusercontent.com/rockneters/aioaio/main/menu/addtrojan.sh" && chmod +x /usr/bin/addtrojan
@@ -64,15 +64,15 @@ wget -O /usr/bin/cert2vray "https://raw.githubusercontent.com/rockneters/aioaio/
 wget -O /usr/bin/cek-ws "https://raw.githubusercontent.com/rockneters/aioaio/main/menu/cek-ws.sh" && chmod +x /usr/bin/cek-ws
 
 wget -O /usr/bin/ssr https://raw.githubusercontent.com/rockneters/aioaio/main/menu/ssrmu.sh && chmod +x /usr/bin/ssr
-wget -O /usr/bin/addssr https://raw.githubusercontent.com/rockneters/aioaio/main/menu/addssr.sh && chmod +x /usr/bin/addssr
-wget -O /usr/bin/delssr https://raw.githubusercontent.com/rockneters/aioaio/main/menu/delssr.sh && chmod +x /usr/bin/delssr
-wget -O /usr/bin/expssr https://raw.githubusercontent.com/rockneters/aioaio/main/menu/expssr.sh && chmod +x /usr/bin/expssr
-
+wget -O /usr/bin/add-ssr https://raw.githubusercontent.com/rockneters/aioaio/main/menu/add-ssr.sh && chmod +x /usr/bin/add-ssr
+wget -O /usr/bin/del-ssr https://raw.githubusercontent.com/rockneters/aioaio/main/menu/del-ssr.sh && chmod +x /usr/bin/del-ssr
+wget -O /usr/bin/exp-ssr https://raw.githubusercontent.com/rockneters/aioaio/main/menu/exp-ssr.sh && chmod +x /usr/bin/exp-ssr
+wget -O /usr/bin/list-ssr https://raw.githubusercontent.com/rockneters/aioaio/main/menu/list-ssr.sh && chmod +x /usr/bin/list-ssr
 cd
 echo "0 0 * * * root xp-ss" >> /etc/crontab
 echo "0 0 * * * root xp-wg" >> /etc/crontab
 echo "0 0 * * * root xp-ws" >> /etc/crontab
-echo "0 0 * * * root expssr" >> /etc/crontab
+echo "0 0 * * * root exp-ssr" >> /etc/crontab
 echo "0 0 * * * root exp" >> /etc/crontab
 echo "0 0 * * * root exptrojan" >> /etc/crontab
 echo "0 0 * * * root xp" >> /etc/crontab

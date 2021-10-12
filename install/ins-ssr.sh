@@ -24,13 +24,11 @@ Error="${Red_font_prefix}[error]${Font_color_suffix}"
 Tip="${Green_font_prefix}[note]${Font_color_suffix}"
 Separator_1="——————————————————————————————"
 check_pid(){
-        PID=`ps -ef |grep -v grep | grep server.py |awk '{print $2}'`
+PID=`ps -ef |grep -v grep | grep server.py |awk '{print $2}'`
 }
 Add_iptables(){
-                iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 1443:1543 -j ACCEPT
-                iptables -I INPUT -m state --state NEW -m udp -p udp --dport 1443:1543 -j ACCEPT
-                ip6tables -I INPUT -m state --state NEW -m tcp -p tcp --dport 1443:1543 -j ACCEPT
-                ip6tables -I INPUT -m state --state NEW -m udp -p udp --dport 1443:1543 -j ACCEPT
+iptables -I INPUT -m state --state NEW -m tcp -p tcp --dport 1443:1543 -j ACCEPT
+iptables -I INPUT -m state --state NEW -m udp -p udp --dport 1443:1543 -j ACCEPT
 }
 Save_iptables(){
 if [[ ${OS} == "centos" ]]; then
@@ -43,15 +41,15 @@ fi
 }
 Set_iptables(){
 if [[ ${OS} == "centos" ]]; then
-                service iptables save
-                service ip6tables save
-                chkconfig --level 2345 iptables on
-                chkconfig --level 2345 ip6tables on
+service iptables save
+service ip6tables save
+chkconfig --level 2345 iptables on
+chkconfig --level 2345 ip6tables on
 else
-                iptables-save > /etc/iptables.up.rules
-                ip6tables-save > /etc/ip6tables.up.rules
-                echo -e '#!/bin/bash\n/sbin/iptables-restore < /etc/iptables.up.rules\n/sbin/ip6tables-restore < /etc/ip6tables.up.rules' > /etc/network/if-pre-up.d/iptables
-                chmod +x /etc/network/if-pre-up.d/iptables
+iptables-save > /etc/iptables.up.rules
+ip6tables-save > /etc/ip6tables.up.rules
+echo -e '#!/bin/bash\n/sbin/iptables-restore < /etc/iptables.up.rules\n/sbin/ip6tables-restore < /etc/ip6tables.up.rules' > /etc/network/if-pre-up.d/iptables
+chmod +x /etc/network/if-pre-up.d/iptables
 fi
 }
 Set_user_api_server_pub_addr(){
@@ -88,7 +86,7 @@ Debian_apt(){
 }
 Download_SSR(){
         cd "/usr/local"
-        git clone -b akkariiin/main https://github.com/rockneters/shadowsocksr.git
+        git clone -b rockneters/master https://github.com/rockneters/shadowsocksr.git
         cd "shadowsocksr"
         cp "${ssr_folder}/config.json" "${config_user_file}"
         cp "${ssr_folder}/mysql.json" "${ssr_folder}/usermysql.json"
