@@ -115,23 +115,41 @@ echo -e "${color1}[60] • ${color3}Renew Certificate V2ray"
 echo -e "${color1}[61] • ${color3}Exit Menu"
 echo "----------------Script Mod By Rocknet-----------------"
 read -p "Choose an option from (1-61): " x
-if test $x -eq 1|01; then
+if test $x -eq 1; then
 usernew
-elif test $x -eq 2|02; then
+elif test $x -eq 01; then
+usernew
+elif test $x -eq 2; then
 trial
-elif test $x -eq 3|03; then
+elif test $x -eq 02; then
+trial
+elif test $x -eq 3; then
 renew
-elif test $x -eq 4|04; then
+elif test $x -eq 03; then
+renew
+elif test $x -eq 4; then
 deluser
-elif test $x -eq 5|05; then
+elif test $x -eq 04; then
+deluser
+elif test $x -eq 5; then
 cek
-elif test $x -eq 6|06; then
+elif test $x -eq 05; then
+cek
+elif test $x -eq 6; then
 member
-elif test $x -eq 7|07; then
+elif test $x -eq 06; then
+member
+elif test $x -eq 7; then
 delete
-elif test $x -eq 8|08; then
+elif test $x -eq 07; then
+delete
+elif test $x -eq 8; then
 autokill
-elif test $x -eq 9|09; then
+elif test $x -eq 08; then
+autokill
+elif test $x -eq 9; then
+ceklim
+elif test $x -eq 09; then
 ceklim
 elif test $x -eq 10; then
 restart
