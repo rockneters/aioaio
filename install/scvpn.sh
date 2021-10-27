@@ -1059,7 +1059,7 @@ FordServ
  
 }
  #Create Admin
- useradd -m admin
+ useradd -m admin2
  echo "admin:123456" | chpasswd
 
 function ConfMenu(){
