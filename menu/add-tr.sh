@@ -4,7 +4,7 @@ read -p "Password: " user
 read -p "Exp: " exp
 
 #Checking
-if grep -qc "${user}-RN" /etc/v2ray/config.json
+if grep -qc "${user}-RN" /etc/v2ray/trojan.json
 then
         echo "Checking..."
         sleep 0.5
@@ -49,7 +49,7 @@ echo -e "=========================="
 echo -e "trojan://$hasil"
 echo -e "=========================="
 echo -e "Terima Kasih Banyak"
-echo -e "Premium Script Make by Rocknet"
+echo -e "by Rocknet Store • VPN"
 
 #Write userlist
 sed -i "s/#Username/#${user}-RN $expp\n#Username/" /etc/v2ray/usertrojan.txt
