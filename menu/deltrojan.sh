@@ -1,6 +1,6 @@
 #!/bin/bash
 clear
-listv2ray
+listtrojan
 echo -e "Masukan Username yang ingin dihapus (Tanpa -RN)"
 read -p "Username: " user
 
