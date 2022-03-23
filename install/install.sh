@@ -211,7 +211,7 @@ cat> /etc/v2ray/trojan.json << END
   },
   "inbounds": [
     {
-      "port": 446,
+      "port": 443,
       "protocol": "trojan",
       "settings": {
         "clients": [
