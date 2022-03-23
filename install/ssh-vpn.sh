@@ -146,7 +146,7 @@ socket = l:TCP_NODELAY=1
 socket = r:TCP_NODELAY=1
 
 [openssh]
-accept = 443
+accept = 4434
 connect = 127.0.0.1:109
 
 [dropbear]
@@ -183,24 +183,6 @@ else
         mkdir /usr/local/ddos
 fi
 clear
-echo; echo 'Installing DOS-Deflate 0.6'; echo
-echo; echo -n 'Downloading source files...'
-wget -q -O /usr/local/ddos/ddos.conf https://raw.githubusercontent.com/rockneters/aioaio/main/modul/ddos.conf
-echo -n '.'
-wget -q -O /usr/local/ddos/LICENSE https://raw.githubusercontent.com/rockneters/aioaio/main/modul/LICENSE
-echo -n '.'
-wget -q -O /usr/local/ddos/ignore.ip.list https://raw.githubusercontent.com/rockneters/aioaio/main/modul/ignore.ip.list
-echo -n '.'
-wget -q -O /usr/local/ddos/ddos.sh https://raw.githubusercontent.com/rockneters/aioaio/main/modul/ddos.sh
-chmod 0755 /usr/local/ddos/ddos.sh
-cp -s /usr/local/ddos/ddos.sh /usr/local/sbin/ddos
-echo '...done'
-echo; echo -n 'Creating cron to run script every minute.....(Default setting)'
-/usr/local/ddos/ddos.sh --cron > /dev/null 2>&1
-echo '.....done'
-echo; echo 'Installation has completed.'
-echo 'Config file is at /usr/local/ddos/ddos.conf'
-echo 'Please send in your comments and/or suggestions to zaf@vsnl.com'
 
 # banner /etc/issue.net
 wget -O /etc/issue.net "https://raw.githubusercontent.com/rockneters/aioaio/main/modul/bannerssh"
@@ -226,15 +208,6 @@ netfilter-persistent reload
 
 # download script
 
-# remove unnecessary files
-cd
-apt autoclean -y
-apt -y remove --purge unscd
-apt-get -y --purge remove samba*;
-apt-get -y --purge remove apache2*;
-apt-get -y --purge remove bind9*;
-apt-get -y remove sendmail*
-apt autoremove -y
 # finishing
 cd
 chown -R www-data:www-data /home/vps/public_html
