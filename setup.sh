@@ -22,14 +22,10 @@ cd
 wget https://raw.githubusercontent.com/rockneters/aioaio/main/install/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
 cd
 wget https://raw.githubusercontent.com/rockneters/aioaio/main/websocket-python/websocket.sh && chmod +x websocket.sh && screen -S websocket.sh ./websocket.sh
-cd
-wget https://raw.githubusercontent.com/rockneters/aioaio/main/install/ins-wg.sh && chmod +x ins-wg.sh && ./ins-wg.sh
-cd
-wget https://raw.githubusercontent.com/rockneters/aioaio/main/install/ins-ssr.sh && chmod +x ins-ssr.sh && ./ins-ssr.sh
-cd
-wget https://raw.githubusercontent.com/rockneters/aioaio/main/install/ins-ss.sh && chmod +x ins-ss.sh && ./ins-ss.sh
-cd
-wget https://raw.githubusercontent.com/rockneters/aioaio/main/install/ipsec.sh && chmod +x ipsec.sh && ./ipsec.sh
+#wget https://raw.githubusercontent.com/rockneters/aioaio/main/install/ins-wg.sh && chmod +x ins-wg.sh && ./ins-wg.sh
+#wget https://raw.githubusercontent.com/rockneters/aioaio/main/install/ins-ssr.sh && chmod +x ins-ssr.sh && ./ins-ssr.sh
+#wget https://raw.githubusercontent.com/rockneters/aioaio/main/install/ins-ss.sh && chmod +x ins-ss.sh && ./ins-ss.sh
+#wget https://raw.githubusercontent.com/rockneters/aioaio/main/install/ipsec.sh && chmod +x ipsec.sh && ./ipsec.sh
 cd
 rm -f ssh-vpn.sh
 rm -f ssr.sh
